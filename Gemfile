@@ -4,9 +4,6 @@ ruby '2.1.1'
 
 gem 'rails', '4.0.3'
 
-group :development, :test do
-  gem 'sqlite3'
-end
 group :production do
   gem 'pg'
 end
