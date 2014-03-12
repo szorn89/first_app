@@ -4,12 +4,11 @@ ruby '2.1.1'
 
 gem 'rails', '4.0.3'
 
-group :production, :staging do
-  gem "pg"
-end
-
 group :development, :test do
-  gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
 end
 
 gem 'sass-rails', '4.0.1'
